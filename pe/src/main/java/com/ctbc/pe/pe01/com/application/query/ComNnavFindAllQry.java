@@ -1,4 +1,4 @@
-package com.ctbc.pe.m01.demo.application.query;
+package com.ctbc.pe.pe01.com.application.query;
 
 import java.util.List;
 

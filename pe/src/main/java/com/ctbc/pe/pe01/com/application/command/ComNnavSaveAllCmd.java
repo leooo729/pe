@@ -1,10 +1,8 @@
-package com.ctbc.pe.m01.demo.application.command;
+package com.ctbc.pe.pe01.com.application.command;
 
 import java.util.List;
 
-import org.springframework.data.domain.Pageable;
-
-import com.ctbc.pe.m01.demo.application.dto.ComNnavDto;
+import com.ctbc.pe.pe01.com.application.dto.ComNnavDto;
 
 import lombok.Builder;
 import lombok.Getter;

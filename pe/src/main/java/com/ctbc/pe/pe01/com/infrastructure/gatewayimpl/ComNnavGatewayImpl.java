@@ -1,14 +1,14 @@
-package com.ctbc.pe.m01.demo.infrastructure.gatewayimpl;
+package com.ctbc.pe.pe01.com.infrastructure.gatewayimpl;
 
 import java.util.List;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.ctbc.pe.m01.demo.domain.entity.ComNnavEntity;
-import com.ctbc.pe.m01.demo.domain.gateway.ComNnavGateway;
-import com.ctbc.pe.m01.demo.infrastructure.database.ComNnavJpaRepository;
-import com.ctbc.pe.m01.demo.infrastructure.mapper.ComNnavMapper;
+import com.ctbc.pe.pe01.com.domain.entity.ComNnavEntity;
+import com.ctbc.pe.pe01.com.domain.gateway.ComNnavGateway;
+import com.ctbc.pe.pe01.com.infrastructure.database.ComNnavJpaRepository;
+import com.ctbc.pe.pe01.com.infrastructure.mapper.ComNnavMapper;
 
 import lombok.RequiredArgsConstructor;
 

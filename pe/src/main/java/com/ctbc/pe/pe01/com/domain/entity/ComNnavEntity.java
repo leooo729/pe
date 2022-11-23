@@ -1,10 +1,10 @@
-package com.ctbc.pe.m01.demo.domain.entity;
+package com.ctbc.pe.pe01.com.domain.entity;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
-import com.ctbc.pe.m01.demo.domain.gateway.ComNnavGateway;
+import com.ctbc.pe.pe01.com.domain.gateway.ComNnavGateway;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

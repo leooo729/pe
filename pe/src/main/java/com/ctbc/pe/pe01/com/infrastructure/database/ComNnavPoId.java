@@ -1,4 +1,4 @@
-package com.ctbc.pe.m01.demo.infrastructure.database;
+package com.ctbc.pe.pe01.com.infrastructure.database;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

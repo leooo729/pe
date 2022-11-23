@@ -1,9 +1,9 @@
-package com.ctbc.pe.m01.demo.domain.factory;
+package com.ctbc.pe.pe01.com.domain.factory;
 
 import org.springframework.stereotype.Service;
 
-import com.ctbc.pe.m01.demo.domain.entity.ComNnavEntity;
-import com.ctbc.pe.m01.demo.domain.gateway.ComNnavGateway;
+import com.ctbc.pe.pe01.com.domain.entity.ComNnavEntity;
+import com.ctbc.pe.pe01.com.domain.gateway.ComNnavGateway;
 
 import lombok.RequiredArgsConstructor;
 

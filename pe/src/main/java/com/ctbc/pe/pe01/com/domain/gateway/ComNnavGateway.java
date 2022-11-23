@@ -1,12 +1,10 @@
-package com.ctbc.pe.m01.demo.domain.gateway;
+package com.ctbc.pe.pe01.com.domain.gateway;
 
 import java.util.List;
-import java.util.Optional;
 
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import com.ctbc.pe.m01.demo.domain.entity.ComNnavEntity;
+import com.ctbc.pe.pe01.com.domain.entity.ComNnavEntity;
 
 public interface ComNnavGateway {
 

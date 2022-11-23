@@ -1,13 +1,13 @@
-package com.ctbc.pe.m01.demo.infrastructure.mapper;
+package com.ctbc.pe.pe01.com.infrastructure.mapper;
 
 import java.util.List;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-import com.ctbc.pe.m01.demo.application.dto.ComNnavDto;
-import com.ctbc.pe.m01.demo.domain.entity.ComNnavEntity;
-import com.ctbc.pe.m01.demo.infrastructure.database.ComNnavPo;
+import com.ctbc.pe.pe01.com.application.dto.ComNnavDto;
+import com.ctbc.pe.pe01.com.domain.entity.ComNnavEntity;
+import com.ctbc.pe.pe01.com.infrastructure.database.ComNnavPo;
 
 @Mapper
 public interface ComNnavMapper {
