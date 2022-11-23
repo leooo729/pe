@@ -13,4 +13,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ComNnavJpaRepository extends JpaRepository<ComNnavPo, ComNnavPoId>, JpaSpecificationExecutor<ComNnavPo> {
 
+    List<ComNnavPo> findByNnavCmdtyIdAndNnavDate();
+    List<ComNnavPo> findByNnavCmdtyId();
 }

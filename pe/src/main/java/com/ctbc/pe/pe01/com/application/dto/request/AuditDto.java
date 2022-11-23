@@ -1,4 +1,4 @@
-package com.ctbc.pe.pe01.com.application.dto;
+package com.ctbc.pe.pe01.com.application.dto.request;
 
 
 import lombok.Data;

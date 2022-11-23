@@ -2,6 +2,9 @@ package com.ctbc.pe.pe01.com.application.service;
 
 import java.util.List;
 
+import com.ctbc.pe.pe01.com.application.dto.request.QueryNetworthRequest;
+import com.ctbc.pe.pe01.com.application.dto.response.NetWorthDto;
+import com.ctbc.pe.pe01.com.infrastructure.database.ComNnavPo;
 import org.springframework.stereotype.Service;
 
 import com.ctbc.pe.pe01.com.application.command.ComNnavSaveAllCmd;
@@ -23,10 +26,13 @@ public class ComNnavService {
 		return ComNnavMapper.INSTANCE.doEntity2Dto(pageEntity);
 	}
 
-
 	public void command(ComNnavSaveAllCmd cmd) {
 		var listEntity = ComNnavMapper.INSTANCE.doDto2Entity(cmd.getListDto());
 		gateway.saveAll(listEntity);
+	}
+
+public List<NetWorthDto> queryNetworth(QueryNetworthRequest request){
+		List<ComNnavPo> comNnavPoList=
 	}
 
 
