@@ -14,6 +14,6 @@ public interface ComNnavGateway {
 
 	public void saveAll(List<ComNnavEntity> listEntity);
 
-	public Page<ComNnavEntity> findAll(Pageable pageable);
+	public List<ComNnavEntity> findAll(Pageable pageable);
 
 }

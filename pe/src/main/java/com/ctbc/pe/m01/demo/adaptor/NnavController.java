@@ -34,9 +34,7 @@ public class NnavController {
 	// @GetMapping("/query")
 	// public Page<ComNnavDto> getNnavs(@RequestParam(required = false) String cmdtyId,@RequestParam(required = false) String dateTime) {
 
-	// 	// Page<ComNnavDto> nnavs = nnavService.query(qry);
 
-	// 	return nnavService.query(qry);
 	// }
 
 	// BK0104_02 - 淨值資料維護提交

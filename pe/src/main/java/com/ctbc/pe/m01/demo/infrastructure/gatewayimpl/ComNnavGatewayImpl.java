@@ -1,9 +1,7 @@
 package com.ctbc.pe.m01.demo.infrastructure.gatewayimpl;
 
 import java.util.List;
-import java.util.Optional;
 
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -32,9 +30,9 @@ public class ComNnavGatewayImpl implements ComNnavGateway {
 	}
 
 
-	public Page<ComNnavEntity> findAll(Pageable pageable) {
-		var pagePo = jpaRepository.findAll(pageable);
-		return pagePo.map(ComNnavMapper.INSTANCE::doPo2Entity);
+	public List<ComNnavEntity> findAll(Pageable pageable) {
+		var pagePo = jpaRepository.findAll();
+		return ComNnavMapper.INSTANCE.doPo2Entity(pagePo);
 	}
 
 
