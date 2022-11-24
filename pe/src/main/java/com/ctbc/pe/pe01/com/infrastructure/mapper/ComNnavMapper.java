@@ -2,6 +2,7 @@ package com.ctbc.pe.pe01.com.infrastructure.mapper;
 
 import java.util.List;
 
+import com.ctbc.pe.pe01.com.application.dto.response.NetWorthDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -29,5 +30,7 @@ public interface ComNnavMapper {
 	public ComNnavDto doEntity2Dto(ComNnavEntity entity);
 
 	public List<ComNnavDto> doEntity2Dto(List<ComNnavEntity> entity);
+
+	public List<NetWorthDto> doEntity2NDto(List<ComNnavEntity> entity);
 
 }

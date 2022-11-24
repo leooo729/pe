@@ -1,7 +1,10 @@
 package com.ctbc.pe.pe01.com.infrastructure.gatewayimpl;
 
+import java.time.LocalDate;
 import java.util.List;
 
+import com.ctbc.pe.pe01.com.application.dto.request.QueryNetworthRequest;
+import com.ctbc.pe.pe01.com.infrastructure.database.ComNnavPo;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +26,6 @@ public class ComNnavGatewayImpl implements ComNnavGateway {
 		jpaRepository.save(po);
 	}
 
-
 	public void saveAll(List<ComNnavEntity> listEntity) {
 		var listPo = ComNnavMapper.INSTANCE.doEntity2Po(listEntity);
 		jpaRepository.saveAll(listPo);
@@ -35,5 +37,9 @@ public class ComNnavGatewayImpl implements ComNnavGateway {
 		return ComNnavMapper.INSTANCE.doPo2Entity(pagePo);
 	}
 
+	public List<ComNnavEntity>query(String id , LocalDate date){
+		var listPo=jpaRepository.findByNnavCmdtyIdAndNnavDate(id,date);
+		return ComNnavMapper.INSTANCE.doPo2Entity(listPo);
+	}
 
 }
